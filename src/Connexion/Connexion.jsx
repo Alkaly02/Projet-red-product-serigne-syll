@@ -10,6 +10,8 @@ import { Dialog } from "primereact/dialog";
 import { Divider } from "primereact/divider";
 import { classNames } from "primereact/utils";
 import { Link } from "react-router-dom";
+import iconLogo from '../assets/icons/logo.svg'
+
 
 function Connexion() {
   const [showMessage, setShowMessage] = useState(false);
@@ -80,6 +82,12 @@ function Connexion() {
   return (
     <div className="connexion">
       <div className="form-demo">
+        <div className="d-flex mb-4 justify-content-center align-items-center">
+          <h2 className="mx-3">
+            <img src={iconLogo} alt="icon" className="logoIns" />
+          </h2>
+          <h2 className="text-white fw-bold">RED PRODUCT</h2>
+        </div>
         <div className="flex justify-content-center">
           <div className="card">
             <h5 className="text-center">Connectez-vous en tant que Admin</h5>
@@ -133,6 +141,7 @@ function Connexion() {
                             toggleMask
                             className={classNames({
                               "p-invalid": isFormFieldValid(meta),
+                              "remove-outline": true,
                             })}
                             header={passwordHeader}
                             footer={passwordFooter}
@@ -189,7 +198,7 @@ function Connexion() {
           <div>
             <p>
               Vous n'avez pas de compte?{" "}
-              <Link to="/inscription" style={{textDecoration: "none"}}>
+              <Link to="/inscription" style={{ textDecoration: "none" }}>
                 <span>S'inscrire</span>
               </Link>
             </p>

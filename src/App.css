@@ -74,6 +74,11 @@ body{
   z-index: 1;
 }
 
+.inscription .logoIns, .connexion .logoIns{
+  width: 50px;
+  height: 50px;
+}
+
 /*----------------------Formulaire css------------------*/
 .inscription .bouton, .connexion .bouton{
   border-radius: 5.333px;
@@ -82,6 +87,34 @@ body{
 }
 .form-demo .card {
   min-width: 450px;
+}
+
+.connexion .p-inputtext, .inscription .p-inputtext {
+  border: none !important;
+  border-bottom: 1px solid #474A4D !important;
+  border-radius: 0 !important;
+}
+
+.connexion .p-inputtext:focus, .inscription .p-inputtext:focus{
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.connexion .p-invalid:focus, .inscription .p-invalid:focus{
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.connexion .p-password-input, .inscription .p-password-input{
+  border: none !important;
+  border-radius: 0 !important;
+  outline: none !important;
+  border-bottom: 1px solid #474A4D !important;
+}
+
+.connexion .p-password-input:focus, .inscription .p-password-input:focus{
+  outline: none !important;
+  box-shadow: none !important;
 }
 
 .connexion .form-footer h5, .connexion .form-footer span, .inscription .form-footer h5, .inscription .form-footer span{
