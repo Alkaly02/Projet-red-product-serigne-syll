@@ -1,0 +1,306 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Inconsolata&family=Lugrasimo&family=Montserrat:wght@100;400&family=Open+Sans&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Roboto&family=Satisfy&display=swap');
+#root {
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+
+.inscription, .connexion{
+  width: 100%;
+  height: 100%;
+  background-image: url("../src/assets/images/WhatsApp\ Image\ 2024-01-15\ à\ 20.41.38_80ec81d2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Roboto";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.inscription::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #494c4f57;
+  mix-blend-mode: multiply;
+  opacity: 1;
+  z-index: 1;
+}
+
+/*----------------------Formulaire css------------------*/
+.inscription .bouton, .connexion .bouton{
+  border-radius: 5.333px;
+  background: #474A4D;
+  border: none;
+}
+.form-demo .card {
+  min-width: 450px;
+}
+
+.connexion .form-footer h5, .connexion .form-footer span, .inscription .form-footer h5, .inscription .form-footer span{
+  color: #FFD964 !important;
+  font-size: 18.667px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 28px; 
+}
+
+.connexion .form-footer, .inscription .form-footer{
+  color: #fff;
+}
+
+.form-demo .card form {
+  margin-top: 2rem;
+}
+.form-demo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.form-demo .card .field {
+  margin-bottom: 1.5rem;
+}
+h1, h2, h3, h4, h5, h6 {
+  margin: 1.5rem 0 1rem 0;
+  font-weight: 600;
+  line-height: 1.2;
+  color: inherit;
+}
+
+h1 { font-size: 2.5rem; }
+h2 { font-size: 2rem; }
+h3 { font-size: 1.75rem; }
+h4 { font-size: 1.5rem; }
+h5 { font-size: 1.25rem; }
+h6 { font-size: 1rem; }
+p {
+  line-height: 1.5;
+  margin: 0 0 1rem 0;
+}
+
+.card {
+  margin-bottom: 2rem;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+@keyframes pulse {
+  0% {
+      background-color: rgba(165, 165, 165, 0.1)
+  }
+  50% {
+      background-color: rgba(165, 165, 165, 0.3)
+  }
+  100% {
+      background-color: rgba(165, 165, 165, 0.1)
+  }
+}
+
+.customer-badge {
+  border-radius: 2px;
+  padding: .25em .5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: .3px;
+}
+
+.customer-badge.status-qualified {
+  background-color: #C8E6C9;
+  color: #256029;
+}
+
+.customer-badge.status-unqualified {
+  background-color: #FFCDD2;
+  color: #C63737;
+}
+
+.customer-badge.status-negotiation {
+  background-color: #FEEDAF;
+  color: #8A5340;
+}
+
+.customer-badge.status-new {
+  background-color: #B3E5FC;
+  color: #23547B;
+}
+
+.customer-badge.status-renewal {
+  background-color: #ECCFFF;
+  color: #694382;
+}
+
+.customer-badge.status-proposal {
+  background-color: #FFD8B2;
+  color: #805B36;
+}
+
+.product-badge {
+  border-radius: 2px;
+  padding: .25em .5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: .3px;
+}
+
+.product-badge.status-instock {
+  background: #C8E6C9;
+  color: #256029;
+}
+
+.product-badge.status-outofstock {
+  background: #FFCDD2;
+  color: #C63737;
+}
+
+.product-badge.status-lowstock {
+  background: #FEEDAF;
+  color: #8A5340;
+}
+
+.order-badge {
+  border-radius: 2px;
+  padding: .25em .5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: .3px;
+}
+
+.order-badge.order-delivered {
+  background: #C8E6C9;
+  color: #256029;
+}
+
+.order-badge.order-cancelled {
+  background: #FFCDD2;
+  color: #C63737;
+}
+
+.order-badge.order-pending {
+  background: #FEEDAF;
+  color: #8A5340;
+}
+
+.order-badge.order-returned {
+  background: #ECCFFF;
+  color: #694382;
+}
+
+.image-text {
+  vertical-align: middle;
+  margin-left: .5rem;
+}
+
+.p-multiselect-representative-option {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.p-multiselect-representative-option img {
+  vertical-align: middle;
+  width: 24px;
+}
+
+.p-multiselect-representative-option span {
+  margin-top: .125rem;
+}
+
+.p-column-filter {
+  width: 100%;
+}
+
+.country-item {
+  display: flex;
+  align-items: center;
+}
+
+.country-item img.flag {
+  width: 18px;
+  margin-right: .5rem;
+}
+
+.flag {
+  vertical-align: middle;
+}
+
+span.flag {
+  width:44px;
+  height:30px;
+  display:inline-block;
+}
+
+img.flag {
+  width:30px
+}
+
+@media screen and (max-width: 960px) {
+  .form-demo .card {
+      width: 80%;
+  }
+}
+@media screen and (max-width: 640px) {
+  .form-demo .card {
+      width: 100%;
+      min-width: 0;
+  }
+}
+          
