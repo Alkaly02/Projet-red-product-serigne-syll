@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 import './index.css'
@@ -9,6 +9,9 @@ import 'primeflex/primeflex.css';
 import { Navigate, RouterProvider, createBrowserRouter } from 'react-router-dom';
 import SignUpForm from './Inscription/Inscription.jsx';
 import Connexion from './Connexion/Connexion.jsx';
+import Rejet from './Reset mdp/Rejet.jsx';
+import Dashboard from './Pages/Dashboard.jsx';
+import Hotels from './Pages/Hotels.jsx';
 
 const route = createBrowserRouter([
   {
@@ -16,8 +19,8 @@ const route = createBrowserRouter([
     element: <Navigate to="/connexion" />,
   },
   {
-    path: "/",
-    element: <App />,
+    path: "/app",
+    element: <App />
   },
   {
     path: "/connexion",
@@ -27,6 +30,10 @@ const route = createBrowserRouter([
     path: "/inscription",
     element: <SignUpForm />,
   },
+  {
+    path: "/rejet",
+    element: <Rejet />
+  }
 ]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(
