@@ -468,8 +468,8 @@ img.flag {
 }
 
 .onlineBtn {
-  width: 13px;
-  height: 13px;
+  width: 10px;
+  height: 10px;
   flex-shrink: 0;
   background-color: #00ff92;
 }
