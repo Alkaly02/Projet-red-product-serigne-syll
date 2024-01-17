@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Icon } from "@mui/material";  // Importer le composant Icon depuis Material-UI
 
 function SidebarComponent({ title, icon, path }) {
   return (

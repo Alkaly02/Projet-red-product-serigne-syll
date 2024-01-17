@@ -35,12 +35,15 @@ function SidebarComp() {
           </IconButton>
 
           <div className="mx-3">
-            <p style={{ fontWeight: "600" }} className="p-0 m-0">
+            <p
+              style={{ fontWeight: "800", fontSize: "11px" }}
+              className="p-0 m-0"
+            >
               Mouhamet Badiane
             </p>
-            <div className="d-flex align-items-center">
+            <div className="d-flex align-items-center py-1">
               <p className="rounded-circle onlineBtn me-2"></p>
-              <p>en ligne</p>
+              <p style={{ fontSize: "11px" }}>en ligne</p>
             </div>
           </div>
         </div>

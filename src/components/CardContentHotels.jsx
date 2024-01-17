@@ -3,7 +3,7 @@ import Card from "react-bootstrap/Card";
 
 function CardContentHotels({ img, title, adress, price }) {
   return (
-    <Card style={{ width: "18rem" }} className="p-0">
+    <Card style={{ width: "15rem" }} className="p-0">
       <Card.Img
         variant="top"
         src={img}
