@@ -16,6 +16,10 @@ import Hotels from './Pages/Hotels.jsx';
 const route = createBrowserRouter([
   {
     path: "/",
+    element: <Navigate to="/connexion" />,
+  },
+  {
+    path: "/",
     element: <App />,
     children: [
       {
