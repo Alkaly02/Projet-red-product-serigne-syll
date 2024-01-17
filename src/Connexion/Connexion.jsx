@@ -183,11 +183,13 @@ function Connexion() {
                     )}
                   />
 
-                  <Button
-                    type="submit"
-                    label="Se connecter"
-                    className="mt-2 bouton"
-                  />
+                  <Link to="/admin/dashboard">
+                    <Button
+                      type="submit"
+                      label="Se connecter"
+                      className="mt-2 bouton"
+                    />
+                  </Link>
                 </form>
               )}
             />

@@ -16,11 +16,17 @@ import Hotels from './Pages/Hotels.jsx';
 const route = createBrowserRouter([
   {
     path: "/",
-    element: <Navigate to="/connexion" />,
-  },
-  {
-    path: "/app",
-    element: <App />
+    element: <App />,
+    children: [
+      {
+        path: "admin/dashboard",
+        element: <Dashboard />,
+      },
+      {
+        path: "admin/hotels",
+        element: <Hotels />,
+      },
+    ],
   },
   {
     path: "/connexion",
@@ -32,8 +38,8 @@ const route = createBrowserRouter([
   },
   {
     path: "/rejet",
-    element: <Rejet />
-  }
+    element: <Rejet />,
+  },
 ]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(

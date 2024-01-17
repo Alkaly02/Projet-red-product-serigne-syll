@@ -15,6 +15,7 @@ import LogoutIcon from "@mui/icons-material/Logout";
 import SearchIcon from "@mui/icons-material/Search";
 import InputBase from "@mui/material/InputBase";
 import NotificationsNoneIcon from "@mui/icons-material/NotificationsNone";
+import { Link } from "react-router-dom";
 
 
 const Search = styled("div")(({ theme }) => ({
@@ -150,21 +151,19 @@ function NavUser({ Toggle }) {
   return (
     <Box sx={{ flexGrow: 1 }} className="box-navabar">
       <AppBar position="static">
-        <Toolbar className="navbar py-4">
+        <Toolbar className="navbar">
           <Typography
             variant="h6"
             noWrap
             component="div"
             sx={{ display: { xs: "none", sm: "block" } }}
           >
-            <span className="brand-name fs-4 mx-2 text-dark fw-bold">
-              Dashboard
-            </span>
+            <span className="brand-name mx-2 text-dark fw-bold">Dashboard</span>
           </Typography>
           <Box sx={{ flexGrow: 1 }} />
-          <Search className="text-dark border rounded-pill">
+          <Search className="border rounded-pill text-dark">
             <SearchIconWrapper>
-              <SearchIcon />
+              <SearchIcon style={{ color: "#CCCDCE" }} />
             </SearchIconWrapper>
             <StyledInputBase
               placeholder="Recherche"
@@ -177,6 +176,7 @@ function NavUser({ Toggle }) {
               aria-controls={menuId}
               aria-label="show 17 new notifications"
               color="inherit"
+              className="no-hover"
             >
               <Badge badgeContent={17}>
                 <NotificationsNoneIcon className="text-dark" />
@@ -190,11 +190,14 @@ function NavUser({ Toggle }) {
               aria-haspopup="true"
               onClick={handleProfileMenuOpen}
               color="inherit"
+              sx={{ display: "flex", alignItems: "flex-end", padding: "8px" }}
+              className="no-hover m-0"
             >
               <AccountCircle
                 className="text-dark"
-                style={{ fontSize: "2rem" }}
+                style={{ fontSize: "4rem" }}
               />
+              <p className="onlineBtn rounded"></p>
             </IconButton>
           </Box>
           <Box sx={{ display: { xs: "flex", md: "none" } }}>
@@ -205,19 +208,24 @@ function NavUser({ Toggle }) {
               aria-haspopup="true"
               onClick={handleMobileMenuOpen}
               color="inherit"
+              className="no-hover"
             >
               <MoreIcon className="text-dark fs-4" />
             </IconButton>
           </Box>
-          <IconButton
-            size="large"
-            edge="start"
-            color="inherit"
-            aria-label="open drawer"
-            sx={{ mr: 2 }}
-          >
-            <LogoutIcon className="text-dark fs-4 mx-4" />
-          </IconButton>
+          <Box sx={{ display: { xs: "flex", md: "" } }}>
+            <Link to="/connexion">
+              <IconButton
+                edge="start"
+                color="inherit"
+                aria-label="show more"
+                sx={{ mr: 2 }}
+                className="no-hover"
+              >
+                <LogoutIcon className="text-dark mx-4" />
+              </IconButton>
+            </Link>
+          </Box>
         </Toolbar>
       </AppBar>
       {renderMobileMenu}

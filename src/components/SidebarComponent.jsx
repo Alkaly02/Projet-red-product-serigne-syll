@@ -1,14 +1,16 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { Icon } from "@mui/material";  // Importer le composant Icon depuis Material-UI
 
 function SidebarComponent({ title, icon, path }) {
   return (
     <Link
       style={{ textDecoration: "none" }}
-      className="py-3 ps-2 my-2 rounded items"
+      className="py-3 ps-3 my-2 items "
       to={path}
+      tabIndex="0"
     >
-      <i className={icon}></i>
+      <span>{icon}</span>
       <span className="fs-5 mx-2">{title}</span>
     </Link>
   );
