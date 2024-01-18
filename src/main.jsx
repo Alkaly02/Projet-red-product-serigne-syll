@@ -7,11 +7,11 @@ import 'primereact/resources/themes/lara-light-indigo/theme.css';
 import 'primereact/resources/primereact.css';
 import 'primeflex/primeflex.css';
 import { Navigate, RouterProvider, createBrowserRouter } from 'react-router-dom';
-import SignUpForm from './Inscription/Inscription.jsx';
-import Connexion from './Connexion/Connexion.jsx';
 import Rejet from './Reset mdp/Rejet.jsx';
 import Dashboard from './Pages/Dashboard.jsx';
 import Hotels from './Pages/Hotels.jsx';
+import PageInscription from './Inscription/PageInscription.jsx';
+import PageConnexion from './Connexion/PageConnexion.jsx';
 
 const route = createBrowserRouter([
   {
@@ -34,11 +34,11 @@ const route = createBrowserRouter([
   },
   {
     path: "/connexion",
-    element: <Connexion />,
+    element: <PageConnexion />,
   },
   {
     path: "/inscription",
-    element: <SignUpForm />,
+    element: <PageInscription />,
   },
   {
     path: "/rejet",

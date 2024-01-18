@@ -1,22 +1,21 @@
 import React from "react";
-import iconLogo from '../assets/icons/logo.svg'
-import FormReset from "./FormReset";
+import iconLogo from "../assets/icons/logo.svg";
+import FormInscription from "./formInscription";
 
-function Rejet() {
-
+function PageInscription() {
   return (
-    <div className="connexion">
+    <div className="inscription">
       <div className="d-flex justify-content-center align-items-center">
         <h2 className="mx-3">
           <img src={iconLogo} alt="icon" className="logoIns" />
         </h2>
         <h2 className="text-white fw-bold titleAppli">RED PRODUCT</h2>
       </div>
-      <div className="d-flex justify-content-center">
-        <FormReset />
+      <div className="">
+        <FormInscription />
       </div>
     </div>
   );
 }
 
-export default Rejet;
+export default PageInscription;

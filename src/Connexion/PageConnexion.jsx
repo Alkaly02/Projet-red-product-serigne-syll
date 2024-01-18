@@ -1,9 +1,8 @@
-import React from "react";
-import iconLogo from '../assets/icons/logo.svg'
-import FormReset from "./FormReset";
+import React from 'react';
+import iconLogo from "../assets/icons/logo.svg";
+import FormConnexion from './FormConnexion';
 
-function Rejet() {
-
+function PageConnexion() {
   return (
     <div className="connexion">
       <div className="d-flex justify-content-center align-items-center">
@@ -12,11 +11,11 @@ function Rejet() {
         </h2>
         <h2 className="text-white fw-bold titleAppli">RED PRODUCT</h2>
       </div>
-      <div className="d-flex justify-content-center">
-        <FormReset />
+      <div className="">
+        <FormConnexion />
       </div>
     </div>
   );
 }
 
-export default Rejet;
+export default PageConnexion

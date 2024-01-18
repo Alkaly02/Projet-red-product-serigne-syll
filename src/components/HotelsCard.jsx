@@ -7,7 +7,7 @@ function HotelsCard() {
     <div className='pt-3'>
       <div className="row m-0 d-flex justify-content-around flex-wrap">
         {cardsHotels.map((card, index) => (
-            <CardContentHotels {...card} />
+            <CardContentHotels {...card} key={index}/>
         ))}
       </div>
     </div>
