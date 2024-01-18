@@ -1,6 +1,6 @@
 import React from "react";
 import iconLogo from "../assets/icons/logo.svg";
-import FormInscription from "./formInscription";
+import FormInscription from "./FormInscription";
 
 function PageInscription() {
   return (
