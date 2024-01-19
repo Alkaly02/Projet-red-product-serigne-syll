@@ -138,8 +138,9 @@ body {
 .hotels .arrow {
   color: #555555 !important;
 }
-.imageModal i, .textImg{
-  color: #aeaeae !important
+.imageModal i,
+.textImg {
+  color: #aeaeae !important;
 }
 
 .hotels .hotelsCard {
@@ -227,6 +228,28 @@ body {
 .navbar {
   background: #ffffff;
   padding: 0 !important;
+}
+
+.navbar .dropdown-toggle::after {
+  visibility: hidden !important;
+}
+.navbar .notification-badge {
+  display: flex;
+  background: #fcc100;
+  color: white;
+  border-radius: 4.266px;
+  padding: 0px 5px 0px 5px;
+  font-size: 0.8rem;
+  position: absolute;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  top: 10%;
+  right: 0;
+  transform: translate(-40%, 0);
+}
+.navbar input[type="search"]:focus{
+  box-shadow: none;
 }
 
 .css-dlwkee-MuiBadge-badge {

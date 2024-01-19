@@ -2,7 +2,6 @@ import React from "react";
 import logo from "../assets/icons/logo.svg";
 import SidebarComponent from "./SidebarComponent";
 import { menu } from "./Utils";
-import { IconButton } from "@mui/material";
 import { AccountCircle } from "@mui/icons-material";
 
 function SidebarComp() {
@@ -23,18 +22,11 @@ function SidebarComp() {
           className="d-flex align-items-center contentOnline pt-5"
           style={{ width: "100%", height: "20%", marginTop: "90%" }}
         >
-          <IconButton
-            size="large"
-            edge="end"
-            aria-label="account of current user"
-            aria-controls={""}
-            aria-haspopup="true"
-            color="inherit"
-          >
+          <div className="ps-2">
             <AccountCircle style={{ fontSize: "4rem" }} />
-          </IconButton>
+          </div>
 
-          <div className="mx-3">
+          <div className="mx-3 pt-3">
             <p
               style={{ fontWeight: "800", fontSize: "11px" }}
               className="p-0 m-0"

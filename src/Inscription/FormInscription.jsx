@@ -25,7 +25,7 @@ function FormInscription() {
               <input type="password" className="form-control no-outline" />
             </div>
           </div>
-          <div className="row">
+          <div className="row py-3">
             <div className="col">
               <div className="form-check">
                 <input className="form-check-input" type="checkbox" />
